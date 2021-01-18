@@ -75,6 +75,7 @@ export const MAIN_SCRIPT = (
   const {
     end,
     rel,
+    playsInline = true,
     color,
     start,
     playerLang,
@@ -89,6 +90,7 @@ export const MAIN_SCRIPT = (
 
   // _s postfix to refer to "safe"
   const rel_s = rel ? 1 : 0;
+  const playsinline_s = playsInline ? 1 : 0;
   const loop_s = loop ? 1 : 0;
   const videoId_s = videoId || '';
   const controls_s = controls ? 1 : 0;
@@ -159,7 +161,7 @@ export const MAIN_SCRIPT = (
             ${playlist}
             end: ${end},
             rel: ${rel_s},
-            playsinline: 1,
+            playsinline: ${playsinline_s},
             loop: ${loop_s},
             color: ${color},
             start: ${start},

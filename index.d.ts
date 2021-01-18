@@ -23,6 +23,7 @@ export interface InitialPlayerParams {
   end?: Number;
   preventFullScreen?: boolean;
   playerLang?: String;
+  playsInline?: boolean;
   iv_load_policy?: Number;
   modestbranding?: boolean;
   rel?: boolean;
